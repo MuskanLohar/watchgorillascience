@@ -54,3 +54,21 @@ card.addEventListener('mouseleave', () => {
   text.style.color = 'black'; // back to normal
   image.style.transform = 'scale(1)';
 });
+
+
+
+
+
+
+
+
+
+  const form = document.getElementById('contactForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.classList.add('hidden'); // form hide
+    thankYou.classList.remove('hidden'); // toaster show
+  });
+
